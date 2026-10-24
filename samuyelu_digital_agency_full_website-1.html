@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#071329">
+<meta name="description" content="Samuyelu Digital Agency — information, career guidance, nature, family and photo gallery.">
+<title>Samuyelu Digital Agency | Information • Guidance • Inspiration</title>
+<style>
+:root{--bg:#071329;--panel:#10213e;--blue:#247cff;--cyan:#35e7ff;--purple:#a477ff;--text:#f5f8ff;--muted:#bdc9df;--line:#ffffff20}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:82px}
+body{font-family:Arial,Helvetica,sans-serif;background:#071329;color:var(--text);line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}button{cursor:pointer}
+.container{width:min(1180px,92%);margin:auto}
+section{padding:72px 0;position:relative}
+.tech-bg{position:fixed;inset:0;z-index:-2;overflow:hidden;background:radial-gradient(ellipse at 10% 15%,#1659b84d,transparent 40%),radial-gradient(ellipse at 90% 65%,#7027b833,transparent 38%),#071329}
+.tech-bg:before{content:"";position:absolute;inset:-50%;background-image:linear-gradient(#53bfff0b 1px,transparent 1px),linear-gradient(90deg,#53bfff0b 1px,transparent 1px);background-size:42px 42px;transform:perspective(500px) rotateX(55deg);animation:grid 22s linear infinite}
+.orb{position:absolute;width:240px;height:240px;border-radius:50%;filter:blur(80px);opacity:.22;animation:float 12s ease-in-out infinite alternate}.orb.one{background:#247cff;top:18%;left:-100px}.orb.two{background:#a477ff;top:60%;right:-100px;animation-delay:-4s}
+@keyframes grid{to{background-position:0 168px}}@keyframes float{to{transform:translate(35px,-30px) scale(1.15)}}
+header{position:sticky;top:0;z-index:100;background:#061126ee;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.header-inner{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;white-space:nowrap}.brand-mark{width:43px;height:43px;border-radius:14px;display:grid;place-items:center;font-size:25px;background:linear-gradient(135deg,#168bff,#9b5cff);box-shadow:0 0 25px #247cff50}.brand small{display:block;color:var(--cyan);font-size:9px;letter-spacing:2px}
+.nav{display:flex;align-items:center;gap:15px;flex-wrap:wrap}.nav a{font-size:12px;color:#e2eaff}.nav a:hover{color:var(--cyan)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid transparent;border-radius:10px;padding:11px 16px;font-weight:700;font-size:13px;transition:.2s}.btn:hover{transform:translateY(-2px);box-shadow:0 8px 22px #247cff35}.primary{background:linear-gradient(110deg,#168bff,#7856f4);color:#fff}.outline{border-color:#ffffff55;background:#ffffff08;color:#fff}.green{background:#0ca968;color:#fff}
+.hero{padding:65px 0 55px;min-height:490px;display:flex;align-items:center}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}.eyebrow{font-size:11px;font-weight:800;letter-spacing:2.5px;color:var(--cyan);text-transform:uppercase}.hero h1{font-size:clamp(38px,5.6vw,67px);line-height:1.05;letter-spacing:-1.8px;margin:16px 0}.gradient{background:linear-gradient(100deg,var(--cyan),#8c9bff,var(--purple));color:transparent;-webkit-background-clip:text;background-clip:text}.hero p{max-width:600px;color:#d1dcef;margin-bottom:22px}.hero-actions{display:flex;flex-wrap:wrap;gap:10px}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.chip{font-size:11px;padding:7px 10px;border:1px solid var(--line);border-radius:30px;background:#ffffff09;color:#e2eaff}
+.hero-visual{position:relative;min-height:320px;display:grid;place-items:center}.globe{width:min(300px,75vw);aspect-ratio:1;border:1px solid #35e7ff80;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,#1455a777,#101b36 58%,#071329 75%);box-shadow:0 0 45px #35e7ff24;position:relative}.globe:before,.globe:after{content:"";position:absolute;inset:20px;border:1px solid #a477ff80;border-radius:50%;transform:rotateX(65deg)}.globe:after{inset:42px;border-color:#35e7ff70;transform:rotateY(65deg)}.globe span{font-size:78px;filter:drop-shadow(0 0 22px #35e7ff);z-index:1}.float-tag{position:absolute;padding:9px 12px;border:1px solid #35e7ff66;background:#10213e;border-radius:11px;font-size:12px;box-shadow:0 8px 25px #0005}.tag1{top:20px;left:0}.tag2{right:0;bottom:22px}
+.section-head{text-align:center;margin-bottom:32px}.section-head h2{font-size:clamp(28px,4vw,42px);line-height:1.2;margin:8px 0}.section-head p{color:var(--muted);max-width:700px;margin:auto}.feature-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+.feature{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:linear-gradient(145deg,#132443ee,#0c1830ee);transition:.2s}.feature:hover{transform:translateY(-4px);border-color:#35e7ff70}.feature img{width:100%;height:130px;object-fit:cover;display:block}.feature-content{padding:15px}.feature h3{font-size:16px;margin-bottom:5px}.feature p{font-size:12px;color:var(--muted);margin-bottom:12px}.small-btn{display:inline-block;background:#247cff;color:white;border-radius:8px;padding:7px 11px;font-size:11px;font-weight:bold}
+.content-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.info-card{border:1px solid var(--line);border-radius:17px;overflow:hidden;background:#0e1c35eF}.info-card img{width:100%;height:220px;object-fit:cover;display:block}.info-body{padding:20px}.info-body h3{font-size:21px;margin-bottom:8px}.info-body p,.info-body li{color:var(--muted);font-size:13px}.info-body ul{padding-left:19px;margin:10px 0}.salary-note{font-size:11px;color:#f3d99a;background:#8c641c25;border:1px solid #d6a64b45;padding:9px 11px;border-radius:9px;margin-top:12px}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.gallery-item{position:relative;overflow:hidden;border-radius:14px;border:1px solid var(--line);background:#10213e}.gallery-item img{display:block;width:100%;height:200px;object-fit:cover;transition:transform .3s}.gallery-item:hover img{transform:scale(1.04)}.gallery-item span{display:block;padding:10px 12px;font-size:13px;font-weight:bold}
+.family-box{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:center;border:1px solid var(--line);border-radius:20px;padding:25px;background:linear-gradient(135deg,#132443dd,#0b1730dd)}.family-box img{width:100%;height:280px;object-fit:cover;border-radius:14px}.family-box p{color:var(--muted);margin:10px 0}.privacy{font-size:12px;color:#ffdf9a;background:#7b581d30;padding:10px;border-radius:8px}
+.chat-launch{position:fixed;right:18px;bottom:85px;z-index:200;width:58px;height:58px;border:0;border-radius:50%;font-size:26px;background:linear-gradient(135deg,#35e7ff,#5477ff);box-shadow:0 0 25px #35e7ff50;color:#061126}
+#chat-panel{display:none;position:fixed;right:15px;bottom:153px;z-index:201;width:min(350px,calc(100vw - 30px));height:440px;max-height:65vh;border:1px solid #35e7ff75;border-radius:17px;overflow:hidden;background:#0c1830;box-shadow:0 18px 55px #000a}
+.chat-head{padding:13px;background:linear-gradient(110deg,#247cff,#7856f4);display:flex;justify-content:space-between;align-items:center}.chat-head button{background:transparent;border:0;color:white;font-size:22px}.chat-messages{height:calc(100% - 126px);overflow:auto;padding:12px}.msg{white-space:pre-wrap;overflow-wrap:anywhere;padding:10px 12px;border-radius:12px;margin-bottom:9px;font-size:13px}.bot{background:#182a49;margin-right:18px}.user{background:#246bdf;margin-left:18px}.chat-controls{position:absolute;bottom:0;left:0;right:0;display:flex;gap:6px;padding:9px;background:#10213e;border-top:1px solid var(--line)}.chat-controls input{flex:1;min-width:0;background:#071329;color:white;border:1px solid #ffffff30;border-radius:8px;padding:9px}.chat-controls button{border:0;border-radius:8px;background:#247cff;color:white;padding:8px}.chat-note{font-size:10px;text-align:center;color:var(--muted);padding:3px}
+.contact{background:radial-gradient(ellipse at 50% 100%,#315eff30,transparent 65%);border-top:1px solid var(--line)}.contact-form{max-width:650px;margin:auto}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.contact-form label{display:block;font-size:12px;margin-bottom:5px;color:#d9e4ff}.contact-form input,.contact-form textarea,.contact-form select{width:100%;padding:12px;background:#101e38;border:1px solid #ffffff30;border-radius:8px;color:white}.form-full{margin-top:12px}.contact-form textarea{min-height:100px}.form-submit{width:100%;margin-top:15px}.note{text-align:center;color:var(--muted);font-size:11px;margin-top:9px}
+footer{padding:30px 0 90px;background:#040a17;border-top:1px solid var(--line)}.footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:20px}.footer-grid p,.footer-grid a{font-size:12px;color:var(--muted)}.footer-grid h3{margin-bottom:8px}.footer-links{display:grid;grid-template-columns:1fr 1fr;gap:7px}.copyright{text-align:center;color:var(--muted);font-size:11px;margin-top:22px}
+.mobile-nav{display:none}
+@media(max-width:900px){.nav{gap:9px}.nav a{font-size:10px}.feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-grid{gap:18px}}
+@media(max-width:650px){section{padding:55px 0}.header-inner{min-height:66px}.nav{display:none}.brand{font-size:14px}.hero{padding:45px 0}.hero-grid,.family-box{grid-template-columns:1fr}.hero h1{font-size:45px}.hero-visual{min-height:280px}.globe{width:250px}.globe span{font-size:68px}.tag1{left:0;top:10px}.tag2{right:0;bottom:10px}.feature-grid,.content-grid,.gallery-grid{grid-template-columns:1fr 1fr}.feature img{height:110px}.info-card img{height:160px}.gallery-item img{height:140px}.info-body{padding:14px}.info-body h3{font-size:18px}.form-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.mobile-nav{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:150;justify-content:space-around;background:#08152cf5;border-top:1px solid #35e7ff30;padding:7px 2px calc(7px + env(safe-area-inset-bottom));backdrop-filter:blur(15px)}.mobile-nav a{flex:1;text-align:center;font-size:10px;color:#dbe5ff}.mobile-nav span{display:block;font-size:17px}.chat-launch{bottom:78px}footer{padding-bottom:95px}}
+@media(max-width:390px){.feature-grid,.content-grid,.gallery-grid{grid-template-columns:1fr}.feature img{height:170px}.gallery-item img{height:180px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="tech-bg" aria-hidden="true"><div class="orb one"></div><div class="orb two"></div></div>
+<header><div class="container header-inner">
+<a class="brand" href="#home"><span class="brand-mark">S</span><span>Samuyelu<small>DIGITAL AGENCY</small></span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="#home">Home</a><a href="#careers">Careers</a><a href="#gallery">Gallery</a><a href="#plants">Plants</a><a href="#family">Family</a><a href="#chat">AI Assistant</a><a href="#contact">Contact</a>
+</nav><a class="btn green" href="#contact">✆ Contact</a>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="container hero-grid">
+<div><div class="eyebrow">YOUR DREAMS • OUR DIGITAL WORLD</div>
+<h1>Samuyelu<br><span class="gradient">Digital Agency</span></h1>
+<p>Information • Guidance • Inspiration. Explore career paths, job information, professional uniforms, nature, family memories and beautiful photos in one place.</p>
+<div class="hero-actions"><a class="btn primary" href="#explore">Explore Website ↗</a><a class="btn outline" href="#careers">Explore Careers</a></div>
+<div class="chips"><span class="chip">🎖️ Career Guidance</span><span class="chip">💼 Job Information</span><span class="chip">🌱 Nature</span><span class="chip">🖼️ Gallery</span></div>
+</div>
+<div class="hero-visual"><div class="globe"><span>✦</span></div><div class="float-tag tag1">🌐 Knowledge & Ideas</div><div class="float-tag tag2">🤖 Smart Demo Assistant</div></div>
+</div></section>
+
+<section id="explore"><div class="container">
+<div class="section-head"><div class="eyebrow">EXPLORE</div><h2>Discover <span class="gradient">Our Sections</span></h2><p>Choose a topic to learn more. Images are illustrative examples; replace them with your own photos anytime.</p></div>
+<div class="feature-grid">
+<article class="feature"><img loading="lazy" src="https://images.unsplash.com/photo-1579912437766-7896df6d3cd3?auto=format&fit=crop&w=700&q=80" alt="Indian army personnel"><div class="feature-content"><h3>Army Careers</h3><p>Roles, eligibility and service life.</p><a class="small-btn" href="#army">View Details →</a></div></article>
+<article class="feature"><img loading="lazy" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=700&q=80" alt="Doctor in a clinic"><div class="feature-content"><h3>Doctor Careers</h3><p>Education, training and opportunities.</p><a class="small-btn" href="#doctor">View Details →</a></div></article>
+<article class="feature"><img loading="lazy" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=700&q=80" alt="Professionals meeting"><div class="feature-content"><h3>Other Jobs</h3><p>Explore different career options.</p><a class="small-btn" href="#jobs">View Details →</a></div></article>
+<article class="feature"><img loading="lazy" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=700&q=80" alt="Professional clothing example"><div class="feature-content"><h3>Dress Gallery</h3><p>Uniforms and professional styles.</p><a class="small-btn" href="#dress">View Gallery →</a></div></article>
+<article class="feature"><img loading="lazy" src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=700&q=80" alt="Young plants growing"><div class="feature-content"><h3>Plant Gallery</h3><p>See how plants grow.</p><a class="small-btn" href="#plants">View Gallery →</a></div></article>
+<article class="feature"><img loading="lazy" src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=700&q=80" alt="Family spending time together"><div class="feature-content"><h3>Family Section</h3><p>A safe place for family memories.</p><a class="small-btn" href="#family">View More →</a></div></article>
+<article class="feature"><img loading="lazy" src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=700&q=80" alt="Mountain lake landscape"><div class="feature-content"><h3>Photo Gallery</h3><p>Nature, places and inspiration.</p><a class="small-btn" href="#gallery">View Gallery →</a></div></article>
+<article class="feature"><img loading="lazy" src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=700&q=80" alt="Digital technology lights"><div class="feature-content"><h3>AI Assistant</h3><p>Ask simple questions about this website.</p><a class="small-btn" href="#chat">Open Assistant →</a></div></article>
+</div></div></section>
+
+<section id="careers"><div class="container"><div class="section-head"><div class="eyebrow">CAREER GUIDANCE</div><h2>Explore <span class="gradient">Career Paths</span></h2><p>These summaries are starting points. Always check official recruitment and college information before making decisions.</p></div>
+<div class="content-grid">
+<article class="info-card" id="army"><img loading="lazy" src="https://images.unsplash.com/photo-1579912437766-7896df6d3cd3?auto=format&fit=crop&w=1000&q=80" alt="Army career illustrative photo"><div class="info-body"><h3>🎖️ Army Careers</h3><p>Serve the nation through different officer and other-rank entry routes.</p><ul><li>Eligibility depends on the entry route, age, education and medical fitness.</li><li>After Class 10, some entries may be available; officer routes usually require further study or specific qualifications.</li><li>Training, selection tests and medical standards apply.</li><li>Uniform and responsibilities vary by rank and role.</li></ul><p><strong>Pay:</strong> Salary depends on rank, entry type, allowances and service conditions.</p><div class="salary-note">Pay figures change. Check the official Indian Army recruitment notice for the exact entry and current pay.</div><a class="small-btn" target="_blank" rel="noopener" href="https://joinindianarmy.nic.in/">Official Army Recruitment →</a></div></article>
+<article class="info-card" id="doctor"><img loading="lazy" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=1000&q=80" alt="Doctor career illustrative photo"><div class="info-body"><h3>🩺 Doctor Careers</h3><p>Help people maintain health and treat illness through medical science.</p><ul><li>School science subjects are important for the usual MBBS route.</li><li>MBBS admission in India generally requires NEET-UG and meeting current eligibility rules.</li><li>MBBS study and internship take several years; specialisation requires more study.</li><li>Other healthcare careers include nursing, pharmacy, physiotherapy and lab technology.</li></ul><p><strong>Pay:</strong> Depends on qualification, employer, location, experience and specialisation.</p><div class="salary-note">There is no single doctor salary. Government, private, early-career and specialist salaries can differ substantially.</div><a class="small-btn" target="_blank" rel="noopener" href="https://neet.nta.nic.in/">NEET Official Website →</a></div></article>
+<article class="info-card" id="jobs"><img loading="lazy" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=80" alt="Professionals at work"><div class="info-body"><h3>💼 Other Job Options</h3><p>There are many routes to a career. Compare education, interests, costs and daily responsibilities.</p><ul><li>Government services and public-sector roles.</li><li>Engineering, IT and cybersecurity.</li><li>Teaching, banking, business and skilled trades.</li><li>Healthcare, design, media and creative work.</li></ul><p><strong>Pay:</strong> Varies widely by role, qualification, recruitment level and experience.</p><div class="salary-note">Avoid choosing a career based only on salary. Check the course cost, eligibility, job stability and your interests.</div><a class="small-btn" target="_blank" rel="noopener" href="https://www.ncs.gov.in/">National Career Service →</a></div></article>
+<article class="info-card" id="dress"><img loading="lazy" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1000&q=80" alt="Professional clothing inspiration"><div class="info-body"><h3>👔 Dress & Uniform Gallery</h3><p>Explore examples of work clothing and uniform styles.</p><ul><li>Army and other defence uniforms.</li><li>Doctor coats and healthcare scrubs.</li><li>Police, fire service and other public-service uniforms.</li><li>Business, office and technical-work clothing.</li></ul><p>Uniforms must be worn according to the relevant organisation's rules. Images here are illustrative, not official uniform guidance.</p><a class="small-btn" href="#gallery">See Photos →</a></div></article>
+</div></div></section>
+
+<section id="plants"><div class="container"><div class="section-head"><div class="eyebrow">NATURE & LEARNING</div><h2>From Seed to <span class="gradient">Plant</span></h2><p>Plants grow through stages, with water, light, air and suitable soil helping them thrive.</p></div>
+<div class="gallery-grid">
+<div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1604762524889-3e2fcc145683?auto=format&fit=crop&w=700&q=80" alt="Seeds and soil"><span>1. Seed & Soil</span></div>
+<div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=700&q=80" alt="Seedlings growing"><span>2. Germination & Seedlings</span></div>
+<div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=700&q=80" alt="Green plant leaves"><span>3. Growing Plant</span></div>
+</div></div></section>
+
+<section id="family"><div class="container"><div class="section-head"><div class="eyebrow">FAMILY & MEMORIES</div><h2>Family <span class="gradient">Section</span></h2><p>Make a simple, warm family introduction. Add only information your family agrees to share publicly.</p></div>
+<div class="family-box"><img loading="lazy" src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1000&q=80" alt="Family time illustration"><div><h3>Our Family • Our Strength ❤️</h3><p>This space can introduce family members, favourite memories, celebrations and shared values.</p><p>You can replace the sample photo with a family photo that everyone has agreed to publish.</p><div class="privacy">Privacy reminder: do not publish home address, personal phone numbers, school details, identity documents or private family information on a public website.</div></div></div>
+</div></section>
+
+<section id="gallery"><div class="container"><div class="section-head"><div class="eyebrow">VISUAL INSPIRATION</div><h2>Photo <span class="gradient">Gallery</span></h2><p>Sample images for nature, work, education and technology. These are illustrative images loaded from an external photo service.</p></div>
+<div class="gallery-grid">
+<div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=700&q=80" alt="Mountain lake"><span>Nature & Travel</span></div>
+<div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=80" alt="Green landscape"><span>Beautiful Landscapes</span></div>
+<div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=700&q=80" alt="Digital technology"><span>Technology</span></div>
+<div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=700&q=80" alt="Career teamwork"><span>Career & Teamwork</span></div>
+<div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=700&q=80" alt="Healthcare professional"><span>Healthcare</span></div>
+<div class="gallery-item"><img loading="lazy" src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=700&q=80" alt="Green plants"><span>Plants & Greenery</span></div>
+</div></div></section>
+
+<section id="chat"><div class="container"><div class="section-head"><div class="eyebrow">WEBSITE HELP</div><h2>Samuyelu <span class="gradient">Demo Assistant</span></h2><p>Open the robot button at the bottom of the screen to ask about careers, services, plants or the gallery. This version uses prepared responses, not a live AI model.</p><a class="btn primary" href="#contact">Ask another question →</a></div></div></section>
+
+<section class="contact" id="contact"><div class="container"><div class="section-head"><div class="eyebrow">LET'S CONNECT</div><h2>Contact <span class="gradient">Samuyelu</span></h2><p>Fill in the form to prepare a WhatsApp message. Review it before sending.</p></div>
+<form class="contact-form" id="contactForm"><div class="form-grid"><div><label for="name">Your name *</label><input id="name" required placeholder="Enter your name"></div><div><label for="email">Email (optional)</label><input id="email" type="email" placeholder="you@example.com"></div></div>
+<div class="form-full"><label for="topic">Topic *</label><select id="topic" required><option value="">Choose a topic</option><option>Army Careers</option><option>Doctor Careers</option><option>Other Jobs</option><option>Dress Gallery</option><option>Plant Gallery</option><option>Family / Photo Gallery</option><option>Website / Other</option></select></div>
+<div class="form-full"><label for="message">Message *</label><textarea id="message" required placeholder="Write your question or message"></textarea></div>
+<button class="btn green form-submit" type="submit">Prepare WhatsApp Message ↗</button><p class="note">No message is stored by this static website. WhatsApp opens so you can review and send it.</p></form>
+</div></section>
+</main>
+
+<footer><div class="container"><div class="footer-grid"><div><div class="brand"><span class="brand-mark">S</span><span>Samuyelu<small>DIGITAL AGENCY</small></span></div><p style="margin-top:12px">Information • Guidance • Inspiration</p></div><div><h3>Quick Links</h3><div class="footer-links"><a href="#home">Home</a><a href="#careers">Careers</a><a href="#plants">Plants</a><a href="#family">Family</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div></div><div><h3>Helpful Links</h3><p><a target="_blank" rel="noopener" href="https://joinindianarmy.nic.in/">Indian Army Recruitment</a></p><p><a target="_blank" rel="noopener" href="https://neet.nta.nic.in/">NEET Official Website</a></p><p><a target="_blank" rel="noopener" href="https://www.ncs.gov.in/">National Career Service</a></p></div></div><div class="copyright">© <span id="year"></span> Samuyelu Digital Agency. All rights reserved.</div></div></footer>
+
+<button class="chat-launch" id="chat-open" aria-label="Open chat assistant" title="Open assistant">🤖</button>
+<div id="chat-panel" role="dialog" aria-label="Samuyelu Demo Assistant"><div class="chat-head"><div><strong>Samuyelu Assistant</strong><div style="font-size:11px">Demo • English & Telugu keywords</div></div><button id="chat-close" aria-label="Close assistant">×</button></div>
+<div class="chat-messages" id="chat-messages" aria-live="polite"><div class="msg bot">Hello! నమస్కారం! Ask me about Army, doctor careers, jobs, plants, family section or gallery.</div></div>
+<div class="chat-note">Prepared answers only • Not connected to a live AI model</div>
+<form class="chat-controls" id="chat-form"><input id="chat-input" required placeholder="Type a question..." aria-label="Chat question"><button type="button" id="chat-mic" title="Voice input">🎙️</button><button type="submit" aria-label="Send">➤</button></form></div>
+<nav class="mobile-nav" aria-label="Mobile navigation"><a href="#home"><span>⌂</span>Home</a><a href="#careers"><span>🎓</span>Careers</a><a href="#plants"><span>🌱</span>Plants</a><a href="#gallery"><span>▧</span>Gallery</a><a href="#contact"><span>✉</span>Contact</a></nav>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+/* Add your WhatsApp number: country code + 10-digit number, no + or spaces.
+   Example format only: 91XXXXXXXXXX */
+const whatsappNumber = "91XXXXXXXXXX";
+
+function openWhatsApp(text) {
+  if (!/^91\d{10}$/.test(whatsappNumber)) {
+    alert("First add your WhatsApp number in the code. Find whatsappNumber near the bottom of index.html.");
+    return;
+  }
+  window.open("https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(text), "_blank", "noopener,noreferrer");
+}
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const topic = document.getElementById("topic").value;
+  const message = document.getElementById("message").value.trim();
+  if (!name || !topic || !message) return;
+  openWhatsApp("Hello Samuyelu Digital Agency!\nName: " + name + "\nEmail: " + (email || "Not provided") + "\nTopic: " + topic + "\nMessage: " + message);
+});
+
+const panel = document.getElementById("chat-panel");
+const chatMessages = document.getElementById("chat-messages");
+const chatInput = document.getElementById("chat-input");
+document.getElementById("chat-open").addEventListener("click", () => { panel.style.display = "block"; chatInput.focus(); });
+document.getElementById("chat-close").addEventListener("click", () => { panel.style.display = "none"; });
+
+function addChat(text, who) {
+  const div = document.createElement("div");
+  div.className = "msg " + (who === "user" ? "user" : "bot");
+  div.textContent = text;
+  chatMessages.appendChild(div);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+function replyFor(raw) {
+  const q = raw.toLowerCase();
+  if (/army|సైన్యం|ఆర్మీ|soldier|uniform/.test(q)) return "Army careers depend on the entry route, age, education and medical standards. Check the current official recruitment notice at joinindianarmy.nic.in. Pay depends on rank and allowances.";
+  if (/doctor|డాక్టర్|neet|mbbs/.test(q)) return "The usual MBBS route requires science study and NEET-UG under current eligibility rules. Check neet.nta.nic.in for official updates. Doctor pay varies by employer, qualification and experience.";
+  if (/job|career|ఉద్యోగ|జాబ్|career/.test(q)) return "Career choices include government service, IT, teaching, healthcare, business, design and skilled trades. Compare education requirements, cost, interests and official recruitment details.";
+  if (/dress|uniform|డ్రెస్|యూనిఫామ్|clothes/.test(q)) return "The Dress Gallery shows illustrative professional clothing. Official uniforms and dress rules depend on each organisation.";
+  if (/plant|మొక్క|చెట్టు|seed|విత్తన/.test(q)) return "A plant commonly grows through seed, germination, seedling, young plant and mature plant stages. Water, suitable light, air and soil help it grow.";
+  if (/family|ఫ్యామిలీ|కుటుంబ/.test(q)) return "The Family Section is for shared memories and a short introduction. Only publish details and photos that everyone agrees to share. Keep addresses and private information off public pages.";
+  if (/photo|gallery|ఫోటో|గేలరీ/.test(q)) return "The Photo Gallery contains sample images about nature, careers, healthcare and technology. You can replace them with your own images later.";
+  if (/contact|whatsapp|సంప్రదించ/.test(q)) return "Use the Contact form at the bottom of the page. Add your WhatsApp number in the code first so the message can open in WhatsApp.";
+  if (/hello|hi\b|నమస్కారం|హలో/.test(q)) return "Hello! నమస్కారం! Ask about Army Careers, Doctor Careers, Other Jobs, Dress Gallery, Plant Gallery or Photo Gallery.";
+  return "I do not have a prepared answer for that question yet. Try asking about Army, doctor careers, jobs, uniforms, plants, family or the photo gallery.";
+}
+
+function speakReply(text) {
+  if (!("speechSynthesis" in window)) return;
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = /[\u0C00-\u0C7F]/.test(text) ? "te-IN" : "en-IN";
+  window.speechSynthesis.speak(utterance);
+}
+
+document.getElementById("chat-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const question = chatInput.value.trim();
+  if (!question) return;
+  addChat(question, "user");
+  chatInput.value = "";
+  const answer = replyFor(question);
+  addChat(answer, "bot");
+  speakReply(answer);
+});
+
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+document.getElementById("chat-mic").addEventListener("click", function() {
+  if (!SR) {
+    addChat("Voice input is not supported in this browser. Please type your question or try a supported browser.", "bot");
+    return;
+  }
+  const recognition = new SR();
+  recognition.lang = "te-IN";
+  recognition.interimResults = false;
+  recognition.onresult = function(event) {
+    chatInput.value = event.results[0][0].transcript;
+    document.getElementById("chat-form").requestSubmit();
+  };
+  recognition.onerror = function() { addChat("Could not recognise speech. Check microphone permission or type your question.", "bot"); };
+  try { recognition.start(); } catch (err) { addChat("Voice input could not start. Please try again.", "bot"); }
+});
+</script>
+</body>
+</html>
